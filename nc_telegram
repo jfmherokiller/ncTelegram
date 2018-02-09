@@ -9,11 +9,12 @@ import configparser
 import ncTelegram
 
 
-
-for connection in psutil.net_connections():
-    if connection[4] and connection[4][1] == 4458:
-        print('WARNING: telegram-cli seems to be already running, if you experience connection issues make sure you kill it before restarting ncTelegram')
-#         sys.exit(1)
+from sys import platform
+if platform != "darwin":
+    for connection in psutil.net_connections():
+        if connection[4] and connection[4][1] == 4458:
+            print('WARNING: telegram-cli seems to be already running, if you experience connection issues make sure you kill it before restarting ncTelegram')
+    #         sys.exit(1)
 
 
 confPriorityList = ['ncTelegram.conf', os.path.expanduser("~")+'/.ncTelegram.conf', '/etc/ncTelegram.conf']
