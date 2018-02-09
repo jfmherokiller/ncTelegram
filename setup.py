@@ -9,7 +9,7 @@ setup(name='ncTelegram',
       author='Sébastien Lemaire',
       url='https://github.com/Nanoseb/ncTelegram',
       packages=['ncTelegram'],
-      scripts=['nctelegram'],
+      scripts=['nc_telegram'],
       data_files=[('/etc', ['ncTelegram.conf']),
                   ('/usr/share/ncTelegram', ['t_logo.png']),],
       install_requires=["pytg>=0.4.10"]
