@@ -16,6 +16,19 @@ A ncurses Telegram client developed in Python with the urwid library.
 * caca-utils (optional)
 
 ## Installation
+### OSX
+Install dependencies:
+
+```
+$ brew install python3
+$ brew install telegram-cli --HEAD
+$ pip3 install urwid==1.3
+$ pip3 install psutil
+```
+Install ncTelegram through pip:
+```
+$ pip3 install --upgrade https://github.com/jfmherokiller/ncTelegram/archive/master.zip
+```
 
 ### Arch Linux:
 
