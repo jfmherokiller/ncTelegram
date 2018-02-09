@@ -106,7 +106,7 @@ $ prt-get depinst libnotify libcaca
 
 ## Usage
 
-Before the first run of `nctelegram`, `telegram-cli` must be launched first in
+Before the first run of `nc_telegram`, `telegram-cli` must be launched first in
 order to register your account on your machine for the first time. (phone number
 and verification code).
 
@@ -148,9 +148,9 @@ lists, use `i` to select the text area and `esc` to leave it.
 
 #### Troubleshooting
 
-If `nctelegram` crashes, please [report the
+If `nc_telegram` crashes, please [report the
 issue](https://github.com/Nanoseb/ncTelegram/issues/new) with a backtrace if
 possible.
 
-Before restarting `nctelegram` again, check if `telegram-cli` is
-still running; if so kill it before restarting `nctelegram`.
+Before restarting `nc_telegram` again, check if `telegram-cli` is
+still running; if so kill it before restarting `nc_telegram`.
